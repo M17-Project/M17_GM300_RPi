@@ -569,17 +569,6 @@ F 3 "~" H 1150 3800 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Connector:Conn_01x06_Male J2
-U 1 1 603EE191
-P 950 5750
-F 0 "J2" H 1058 6131 50  0000 C CNN
-F 1 "Conn_01x06_Male" H 1058 6040 50  0000 C CNN
-F 2 "" H 950 5750 50  0001 C CNN
-F 3 "~" H 950 5750 50  0001 C CNN
-	1    950  5750
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR04
 U 1 1 603F086F
 P 1500 4000
@@ -590,40 +579,6 @@ F 3 "" H 1500 4000 50  0001 C CNN
 	1    1500 4000
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR02
-U 1 1 603F2D64
-P 1350 6100
-F 0 "#PWR02" H 1350 5850 50  0001 C CNN
-F 1 "GND" H 1355 5927 50  0000 C CNN
-F 2 "" H 1350 6100 50  0001 C CNN
-F 3 "" H 1350 6100 50  0001 C CNN
-	1    1350 6100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1150 6050 1350 6050
-Wire Wire Line
-	1350 6050 1350 6100
-Wire Wire Line
-	1150 5950 1350 5950
-Wire Wire Line
-	1350 5950 1350 6050
-Connection ~ 1350 6050
-Wire Wire Line
-	1150 5850 1450 5850
-Wire Wire Line
-	1450 5750 1150 5750
-Wire Wire Line
-	1150 5550 1450 5550
-Wire Wire Line
-	1150 5650 1450 5650
-Text GLabel 1450 5850 2    50   Input ~ 0
-SPK_OUT
-Text GLabel 1450 5750 2    50   Input ~ 0
-RX_AUD
-Text GLabel 1450 5650 2    50   Input ~ 0
-TX_AUD
 $Comp
 L power:GND #PWR011
 U 1 1 60401F74
@@ -637,8 +592,6 @@ F 3 "" H 5350 7150 50  0001 C CNN
 $EndComp
 Text GLabel 4000 5150 2    50   Input ~ 0
 RX_AUD_INV
-Text GLabel 1450 5550 2    50   Input ~ 0
-TX_OUT
 $Comp
 L Device:C_Polarized C7
 U 1 1 6041281C
@@ -954,7 +907,7 @@ TX FM deviation
 Text Notes 7900 5650 0    50   ~ 0
 Volume
 Text Notes 750  5300 0    50   ~ 0
-GM300 connector
+To GM300 Connector
 Text Notes 700  3500 0    50   ~ 0
 To RPi USB soundcard
 Text Notes 800  2300 0    50   ~ 0
@@ -1444,4 +1397,39 @@ Wire Wire Line
 Wire Wire Line
 	7100 3800 7350 3800
 Connection ~ 7350 3800
+$Comp
+L Connector:DB9_Female J2
+U 1 1 603884B0
+P 1450 5950
+F 0 "J2" H 1630 5996 50  0000 L CNN
+F 1 "DB9_Female" H 1630 5905 50  0000 L CNN
+F 2 "" H 1450 5950 50  0001 C CNN
+F 3 " ~" H 1450 5950 50  0001 C CNN
+	1    1450 5950
+	1    0    0    -1  
+$EndComp
+Text GLabel 950  5550 0    50   Input ~ 0
+Tx_OUT
+Text GLabel 950  5750 0    50   Input ~ 0
+Tx_AUD
+Text GLabel 950  5950 0    50   Input ~ 0
+Rx_AUD
+Text GLabel 950  6150 0    50   Input ~ 0
+SPK_OUT
+Text GLabel 1050 5650 0    50   Input ~ 0
+GND
+Text GLabel 1050 6250 0    50   Input ~ 0
+GND
+Wire Wire Line
+	1150 5550 950  5550
+Wire Wire Line
+	1150 5650 1050 5650
+Wire Wire Line
+	1150 5750 950  5750
+Wire Wire Line
+	1150 5950 950  5950
+Wire Wire Line
+	1150 6150 950  6150
+Wire Wire Line
+	1150 6250 1050 6250
 $EndSCHEMATC

@@ -91,7 +91,7 @@ F 3 "~" H 1750 2250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_POT RV1
+L Device:R_Potentiometer RV1
 U 1 1 603819C0
 P 5350 6950
 F 0 "RV1" H 5280 6904 50  0000 R CNN
@@ -102,7 +102,7 @@ F 3 "~" H 5350 6950 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Device:R_POT RV3
+L Device:R_Potentiometer RV3
 U 1 1 60382085
 P 8300 5250
 F 0 "RV3" H 8230 5204 50  0000 R CNN
@@ -300,7 +300,7 @@ F 3 "~" H 1850 950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:CP C1
+L Device:C_Polarized C1
 U 1 1 603B8A96
 P 1450 950
 F 0 "C1" V 1195 950 50  0000 C CNN
@@ -368,7 +368,7 @@ F 3 "" H 5800 1650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP C4
+L Device:C_Polarized C4
 U 1 1 603BFEC2
 P 5300 1350
 F 0 "C4" H 5418 1396 50  0000 L CNN
@@ -379,7 +379,7 @@ F 3 "~" H 5300 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP C5
+L Device:C_Polarized C5
 U 1 1 603C07F8
 P 6300 1350
 F 0 "C5" H 6418 1396 50  0000 L CNN
@@ -521,7 +521,7 @@ Wire Wire Line
 Wire Wire Line
 	4450 1100 4450 1050
 $Comp
-L Device:CP C3
+L Device:C_Polarized C3
 U 1 1 603DD79C
 P 3700 1600
 F 0 "C3" H 3818 1646 50  0000 L CNN
@@ -640,7 +640,7 @@ RX_AUD_INV
 Text GLabel 1450 5550 2    50   Input ~ 0
 TX_OUT
 $Comp
-L Device:CP C7
+L Device:C_Polarized C7
 U 1 1 6041281C
 P 9650 5350
 F 0 "C7" V 9905 5350 50  0000 C CNN
@@ -912,7 +912,7 @@ SPK_AMP
 Text GLabel 4000 3300 2    50   Input ~ 0
 SPK_AMP
 $Comp
-L Device:R_POT RV2
+L Device:R_Potentiometer RV2
 U 1 1 6054EE0E
 P 5900 5350
 F 0 "RV2" H 5830 5304 50  0000 R CNN

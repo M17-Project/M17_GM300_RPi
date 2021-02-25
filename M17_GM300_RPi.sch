@@ -1407,11 +1407,11 @@ F 3 " ~" H 1450 5950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 950  5550 0    50   Input ~ 0
-Tx_OUT
+TX_OUT
 Text GLabel 950  5750 0    50   Input ~ 0
-Tx_AUD
+TX_AUD
 Text GLabel 950  5950 0    50   Input ~ 0
-Rx_AUD
+RX_AUD
 Text GLabel 950  6150 0    50   Input ~ 0
 SPK_OUT
 Text GLabel 1050 5650 0    50   Input ~ 0

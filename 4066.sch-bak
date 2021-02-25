@@ -1,0 +1,263 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 4xxx:4066 U1
+U 1 1 60395BEC
+P 4900 3950
+F 0 "U1" H 4900 3685 50  0000 C CNN
+F 1 "4066" H 4900 3776 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 4900 3950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd4066b.pdf" H 4900 3950 50  0001 C CNN
+	1    4900 3950
+	1    0    0    1   
+$EndComp
+$Comp
+L 4xxx:4066 U1
+U 2 1 603960D7
+P 5750 5450
+F 0 "U1" H 5750 5277 50  0000 C CNN
+F 1 "4066" H 5750 5186 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 5750 5450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd4066b.pdf" H 5750 5450 50  0001 C CNN
+	2    5750 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4xxx:4066 U1
+U 3 1 603969C6
+P 5750 3550
+F 0 "U1" H 5750 3285 50  0000 C CNN
+F 1 "4066" H 5750 3376 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 5750 3550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd4066b.pdf" H 5750 3550 50  0001 C CNN
+	3    5750 3550
+	1    0    0    1   
+$EndComp
+$Comp
+L 4xxx:4066 U1
+U 4 1 60397B4B
+P 4900 5050
+F 0 "U1" H 4900 4877 50  0000 C CNN
+F 1 "4066" H 4900 4786 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 4900 5050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd4066b.pdf" H 4900 5050 50  0001 C CNN
+	4    4900 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4xxx:4066 U1
+U 5 1 60398044
+P 7150 4500
+F 0 "U1" H 7380 4546 50  0000 L CNN
+F 1 "4066" H 7380 4455 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 7150 4500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd4066b.pdf" H 7150 4500 50  0001 C CNN
+	5    7150 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 4250 4900 4500
+Text GLabel 4950 4500 2    50   Input ~ 0
+SW1
+Wire Wire Line
+	4950 4500 4900 4500
+Connection ~ 4900 4500
+Wire Wire Line
+	4900 4500 4900 4750
+$Comp
+L Device:C C2
+U 1 1 6039C099
+P 4300 4700
+F 0 "C2" H 4415 4746 50  0000 L CNN
+F 1 "220n" H 4415 4655 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 4338 4550 50  0001 C CNN
+F 3 "~" H 4300 4700 50  0001 C CNN
+	1    4300 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 5050 4300 5050
+Wire Wire Line
+	4300 5050 4300 4850
+$Comp
+L SJ1-3523N:SJ1-3523N J3
+U 1 1 6039D05A
+P 2450 4050
+F 0 "J3" H 2000 4000 50  0000 R CNN
+F 1 "RPi_SND" H 2000 4100 50  0000 R CNN
+F 2 "parts:CUI_SJ1-3523N" H 2450 4050 50  0001 C CNN
+F 3 "~" H 2450 4050 50  0001 C CNN
+	1    2450 4050
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 603A0B60
+P 3150 4350
+F 0 "#PWR?" H 3150 4100 50  0001 C CNN
+F 1 "GND" H 3155 4177 50  0000 C CNN
+F 2 "" H 3150 4350 50  0001 C CNN
+F 3 "" H 3150 4350 50  0001 C CNN
+	1    3150 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 4150 3150 4150
+Wire Wire Line
+	3150 4150 3150 4350
+Wire Wire Line
+	4300 4050 4300 4550
+$Comp
+L Device:D_Zener D4
+U 1 1 603A1DE9
+P 3450 4300
+F 0 "D4" V 3404 4380 50  0000 L CNN
+F 1 "2V7" V 3495 4380 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P3.81mm_Vertical_KathodeUp" H 3450 4300 50  0001 C CNN
+F 3 "~" H 3450 4300 50  0001 C CNN
+	1    3450 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Zener D5
+U 1 1 603A2362
+P 3450 4700
+F 0 "D5" V 3496 4620 50  0000 R CNN
+F 1 "2V7" V 3405 4620 50  0000 R CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P3.81mm_Vertical_KathodeUp" H 3450 4700 50  0001 C CNN
+F 3 "~" H 3450 4700 50  0001 C CNN
+	1    3450 4700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 603A2A40
+P 3450 4950
+F 0 "#PWR?" H 3450 4700 50  0001 C CNN
+F 1 "GND" H 3455 4777 50  0000 C CNN
+F 2 "" H 3450 4950 50  0001 C CNN
+F 3 "" H 3450 4950 50  0001 C CNN
+	1    3450 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 4150 3450 4050
+Wire Wire Line
+	3450 4450 3450 4550
+Wire Wire Line
+	3450 4850 3450 4950
+$Comp
+L Device:R R15
+U 1 1 603A759C
+P 3750 4500
+F 0 "R15" H 3820 4546 50  0000 L CNN
+F 1 "100k" H 3820 4455 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3680 4500 50  0001 C CNN
+F 3 "~" H 3750 4500 50  0001 C CNN
+	1    3750 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 603A7F9B
+P 3750 4950
+F 0 "#PWR?" H 3750 4700 50  0001 C CNN
+F 1 "GND" H 3755 4777 50  0000 C CNN
+F 2 "" H 3750 4950 50  0001 C CNN
+F 3 "" H 3750 4950 50  0001 C CNN
+	1    3750 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 4950 3750 4650
+Wire Wire Line
+	3750 4350 3750 4050
+Connection ~ 3750 4050
+Wire Wire Line
+	3750 4050 4050 4050
+Wire Wire Line
+	5450 5450 4050 5450
+Wire Wire Line
+	4050 5450 4050 4050
+Connection ~ 4050 4050
+Wire Wire Line
+	4050 4050 4300 4050
+Wire Wire Line
+	3450 4050 3750 4050
+Wire Wire Line
+	3450 4050 3050 4050
+Connection ~ 3450 4050
+Wire Wire Line
+	3050 3950 4300 3950
+Text GLabel 5300 5050 2    50   Input ~ 0
+MIC
+Wire Wire Line
+	5200 5050 5300 5050
+Text GLabel 6150 5450 2    50   Input ~ 0
+RX_AUDIO_INV
+Wire Wire Line
+	6050 5450 6150 5450
+Wire Wire Line
+	5450 3550 4300 3550
+Wire Wire Line
+	4300 3550 4300 3950
+Connection ~ 4300 3950
+Wire Wire Line
+	4300 3950 4600 3950
+Wire Wire Line
+	5750 3850 5750 4500
+Text GLabel 5300 3950 2    50   Input ~ 0
+MOD_OUT
+Wire Wire Line
+	5200 3950 5300 3950
+Text GLabel 5800 4500 2    50   Input ~ 0
+SW2
+Wire Wire Line
+	5800 4500 5750 4500
+Connection ~ 5750 4500
+Wire Wire Line
+	5750 4500 5750 5150
+Text GLabel 6200 3550 2    50   Input ~ 0
+SPK_AMP
+Wire Wire Line
+	6200 3550 6050 3550
+$Comp
+L power:GND #PWR?
+U 1 1 60391E6D
+P 7150 5100
+F 0 "#PWR?" H 7150 4850 50  0001 C CNN
+F 1 "GND" H 7155 4927 50  0000 C CNN
+F 2 "" H 7150 5100 50  0001 C CNN
+F 3 "" H 7150 5100 50  0001 C CNN
+	1    7150 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 5000 7150 5100
+$Comp
+L power:+BATT #PWR?
+U 1 1 60392DE7
+P 7150 3850
+F 0 "#PWR?" H 7150 3700 50  0001 C CNN
+F 1 "+BATT" H 7165 4023 50  0000 C CNN
+F 2 "" H 7150 3850 50  0001 C CNN
+F 3 "" H 7150 3850 50  0001 C CNN
+	1    7150 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 4000 7150 3850
+$EndSCHEMATC

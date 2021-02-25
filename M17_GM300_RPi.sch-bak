@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title ""
 Date ""
 Rev ""
@@ -121,17 +121,6 @@ F 1 "1k" H 7620 1805 50  0000 L CNN
 F 2 "" V 7480 1850 50  0001 C CNN
 F 3 "~" H 7550 1850 50  0001 C CNN
 	1    7550 1850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x20_Female J4
-U 1 1 60387CF1
-P 9300 1850
-F 0 "J4" H 9150 800 50  0000 L CNN
-F 1 "Conn_01x20_Female" H 8800 700 50  0000 L CNN
-F 2 "" H 9300 1850 50  0001 C CNN
-F 3 "~" H 9300 1850 50  0001 C CNN
-	1    9300 1850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1408,7 +1397,6 @@ NoConn ~ 9100 1950
 NoConn ~ 9100 2050
 NoConn ~ 9100 2150
 NoConn ~ 9100 2250
-NoConn ~ 9100 2350
 NoConn ~ 9100 2450
 NoConn ~ 9100 2550
 NoConn ~ 9100 2650
@@ -1516,4 +1504,25 @@ F 3 "" H 3950 6000 50  0001 C CNN
 	1    3950 6000
 	1    0    0    -1  
 $EndComp
+Text GLabel 8800 2350 0    50   Input ~ 0
+ACT
+Wire Wire Line
+	9100 2350 8800 2350
+$Comp
+L Connector:Conn_01x20_Female J4
+U 1 1 60387CF1
+P 9300 1850
+F 0 "J4" H 9150 800 50  0000 L CNN
+F 1 "Conn_01x20_Female" H 8800 700 50  0000 L CNN
+F 2 "" H 9300 1850 50  0001 C CNN
+F 3 "~" H 9300 1850 50  0001 C CNN
+	1    9300 1850
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 9000 3500 1000 500 
+U 60390C96
+F0 "4066" 50
+F1 "4066.sch" 50
+$EndSheet
 $EndSCHEMATC

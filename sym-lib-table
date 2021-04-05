@@ -5,4 +5,5 @@
   (lib (name SamacSys_Parts)(type Legacy)(uri ${KIPRJMOD}/parts/SamacSys_Parts.lib)(options "")(descr ""))
   (lib (name 2021-02-26_21-39-49)(type Legacy)(uri ${KIPRJMOD}/parts/2021-02-26_21-39-49.lib)(options "")(descr ""))
   (lib (name 2021-03-16_18-51-23)(type Legacy)(uri ${KIPRJMOD}/parts/2021-03-16_18-51-23.lib)(options "")(descr ""))
+  (lib (name Power_Supplies)(type Legacy)(uri ${KIPRJMOD}/parts/Power_Supplies.lib)(options "")(descr ""))
 )

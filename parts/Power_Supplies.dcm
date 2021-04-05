@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP RPM5.0-6.0
+D Recom 5 volt 6 amp DC-DC Converter
+F https://www.recom-power.com/pdf/Innoline/RPM-6.0.pdf
+$ENDCMP
+#
+#End Doc Library

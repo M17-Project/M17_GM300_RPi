@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name parts)(type KiCad)(uri ${KIPRJMOD}/parts)(options "")(descr ""))
+  (lib (name Power_Supplies)(type KiCad)(uri ${KIPRJMOD}/parts/Power_Supplies.pretty)(options "")(descr ""))
 )

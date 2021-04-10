@@ -714,7 +714,7 @@ U 1 1 604AAE1F
 P 8950 5900
 F 0 "U3" H 9050 6100 50  0000 L CNN
 F 1 "LM386" H 9050 6000 50  0000 L CNN
-F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 9050 6000 50  0001 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 9050 6000 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm386.pdf" H 9150 6100 50  0001 C CNN
 	1    8950 5900
 	1    0    0    -1  

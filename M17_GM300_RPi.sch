@@ -838,39 +838,6 @@ Wire Notes Line
 	6950 6550 6550 6550
 Text Notes 6600 5300 0    50   ~ 10
 TX FM Deviation
-$Comp
-L Transistor_FET:2N7000 Q1
-U 1 1 604E8D6A
-P 4600 6250
-F 0 "Q1" H 4805 6296 50  0000 L CNN
-F 1 "2N7000" H 4805 6205 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 4800 6175 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 4600 6250 50  0001 L CNN
-	1    4600 6250
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Transistor_FET:2N7000 Q3
-U 1 1 604E96EB
-P 5350 6250
-F 0 "Q3" H 5555 6296 50  0000 L CNN
-F 1 "2N7000" H 5555 6205 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 5550 6175 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 5350 6250 50  0001 L CNN
-	1    5350 6250
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Transistor_FET:2N7000 Q4
-U 1 1 604E9D84
-P 5950 6250
-F 0 "Q4" H 6154 6296 50  0000 L CNN
-F 1 "2N7000" H 6154 6205 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 6150 6175 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 5950 6250 50  0001 L CNN
-	1    5950 6250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5550 6250 5650 6250
 Text GLabel 5650 6300 3    50   Input ~ 0
@@ -5394,17 +5361,6 @@ Wire Wire Line
 Connection ~ 8150 3700
 Wire Wire Line
 	8150 3700 8550 3700
-$Comp
-L Transistor_FET:2N7000 Q2
-U 1 1 6059E86D
-P 4800 4100
-F 0 "Q2" H 5004 4146 50  0000 L CNN
-F 1 "2N7000" H 5004 4055 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 5000 4025 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 4800 4100 50  0001 L CNN
-	1    4800 4100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4450 4100 4600 4100
 Wire Wire Line
@@ -5582,6 +5538,50 @@ F 1 "MountingHole" H 5600 6955 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 5500 7000 50  0001 C CNN
 F 3 "~" H 5500 7000 50  0001 C CNN
 	1    5500 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:BSS138 Q1
+U 1 1 60781DCA
+P 4600 6250
+F 0 "Q1" H 4805 6296 50  0000 L CNN
+F 1 "BSS138" H 4805 6205 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4800 6175 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 4600 6250 50  0001 L CNN
+	1    4600 6250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:BSS138 Q3
+U 1 1 607891AA
+P 5350 6250
+F 0 "Q3" H 5555 6296 50  0000 L CNN
+F 1 "BSS138" H 5555 6205 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5550 6175 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 5350 6250 50  0001 L CNN
+	1    5350 6250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:BSS138 Q4
+U 1 1 6078B94D
+P 5950 6250
+F 0 "Q4" H 6154 6296 50  0000 L CNN
+F 1 "BSS138" H 6154 6205 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6150 6175 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 5950 6250 50  0001 L CNN
+	1    5950 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:BSS138 Q2
+U 1 1 607C75A9
+P 4800 4100
+F 0 "Q2" H 5004 4146 50  0000 L CNN
+F 1 "BSS138" H 5004 4055 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5000 4025 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 4800 4100 50  0001 L CNN
+	1    4800 4100
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

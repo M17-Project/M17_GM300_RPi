@@ -49,12 +49,12 @@ $EndComp
 $Comp
 L power:+3V3 #PWR028
 U 1 1 603AED58
-P 10100 850
-F 0 "#PWR028" H 10100 700 50  0001 C CNN
-F 1 "+3V3" V 10115 978 50  0000 L CNN
-F 2 "" H 10100 850 50  0001 C CNN
-F 3 "" H 10100 850 50  0001 C CNN
-	1    10100 850 
+P 9700 850
+F 0 "#PWR028" H 9700 700 50  0001 C CNN
+F 1 "+3V3" V 9800 800 50  0000 L CNN
+F 2 "" H 9700 850 50  0001 C CNN
+F 3 "" H 9700 850 50  0001 C CNN
+	1    9700 850 
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -99,8 +99,6 @@ Wire Wire Line
 	10250 2750 10100 2750
 Wire Wire Line
 	10250 1250 10100 1250
-Wire Wire Line
-	10250 850  10100 850 
 Text GLabel 10100 950  0    50   Input ~ 0
 PTT
 Text GLabel 10100 1050 0    50   Input ~ 0
@@ -981,7 +979,6 @@ Connection ~ 10750 850
 NoConn ~ 10250 1350
 NoConn ~ 10250 1450
 NoConn ~ 10250 1550
-NoConn ~ 10250 1650
 NoConn ~ 10250 1750
 NoConn ~ 10250 1850
 NoConn ~ 10250 1950
@@ -5584,4 +5581,11 @@ F 3 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 4800 4100 50  0001 L 
 	1    4800 4100
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	9700 850  9700 1650
+Wire Wire Line
+	9700 1650 10250 1650
+Wire Wire Line
+	9700 850  10250 850 
+Connection ~ 9700 850 
 $EndSCHEMATC
